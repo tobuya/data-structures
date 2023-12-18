@@ -13,10 +13,10 @@ edges = [(1, 2), (1, 3), (2, 4), (2, 5), (3, 6), (3, 7)]
 tree.add_edges_from(edges)
 
 # Visualize the tree
-pos = nx.spring_layout(tree)  # Positions of nodes in the layout
+pos = nx.spring_layout(tree)
 
 plt.figure(figsize=(8, 6))
 nx.draw(tree, pos, with_labels=True, node_size=500, node_color='lightblue', font_weight='bold', font_size=12, arrows=True)
 plt.title('Basic Tree Visualization')
-plt.axis('off')  # Turn off axis labels
+plt.axis('off')
 plt.show()
